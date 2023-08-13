@@ -1,7 +1,7 @@
 #include <unistd.h>
 
 // LE MIENS
-// return_code est pour la nouvelle version de gcc où il faut gérer le retour de write.
+// return_code est seulement pour la nouvelle version de gcc où il faut gérer le retour de write.
 
 int    get_last_word(char *s, int index)
 {
