@@ -1,8 +1,10 @@
 #include "flood_fill.h"
-
+// size = {8, 5}; taille ligne, taille colonne du tableau area (declaration de la taille du tableau)
+// size[4][7] (accès à l'élément du tableau)
+// begin = {7, 4}; point à la position [7][4] du tableau de tableau (area)
 // déclarer une structure sur une seule ligne sans avoir à déclarer une nouvelle variable:
-//(t_struct){nom_struct.nom_du_champ, nom_struct.nom_du_champ};
-//(type_struct){nom_struct->champ};
+// (t_struct){nom_struct.nom_du_champ, nom_struct.nom_du_champ};
+// (type_struct){nom_struct->champ};
 
 void  flood_fill(char **tab, t_point size, t_point begin)
 {
