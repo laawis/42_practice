@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strrev.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: gaollier <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/02 11:26:30 by gaollier          #+#    #+#             */
-/*   Updated: 2022/10/03 11:53:49 by gaollier         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 #include <stdio.h>
 
 int	ft_len(char *str)
@@ -45,3 +34,18 @@ int	main(int ac, char **av)
 	(void)ac;
 	printf("%s\n", ft_strrev(av[1]));
 }
+
+/*
+Assignment name  : ft_strrev
+Expected files   : ft_strrev.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+Write a function that reverses (in-place) a string.
+
+It must return its parameter.
+
+Your function must be declared as follows:
+
+char    *ft_strrev(char *str);
+*/
