@@ -13,10 +13,3 @@ void    print_bits(unsigned char octet)
         i--;
     }
 }
-
-int main()
-{
-    unsigned char octet = 2;
-    print_bits(octet);
-    return (0);
-}
