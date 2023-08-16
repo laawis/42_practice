@@ -48,7 +48,6 @@ int  main(int argc, char **argv)
             else if (i == 0 && argv[1][i] != '\0')
                 print_last_word(argv[1], i);
         } 
-
     }
     write(1, "\n", 1);
     return (0);
