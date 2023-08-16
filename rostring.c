@@ -1,6 +1,5 @@
-#include <unistd.h>
-
 // ROSTRING PIMPED
+#include <unistd.h>
 
 int    skip_ispace(char *str, int i)
 {
