@@ -17,8 +17,7 @@ void	repeat_alpha(char *str)
 	int	i;
 	int	count1;
 	int	count2;
-
-		
+	
 	i = 0;
 	while (str[i])
 	{
@@ -42,7 +41,6 @@ void	repeat_alpha(char *str)
 		}
 		i++;
 	}
-
 }
 
 int	main(int ac, char **av)
@@ -52,3 +50,18 @@ int	main(int ac, char **av)
 	write(1, "\n", 1);
 	return (0);
 }
+
+/*
+Assignment name  : ft_strrev
+Expected files   : ft_strrev.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+Write a function that reverses (in-place) a string.
+
+It must return its parameter.
+
+Your function must be declared as follows:
+
+char    *ft_strrev(char *str);
+*/
