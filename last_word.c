@@ -1,3 +1,5 @@
+// LAST_WORD VERSION PRO
+
 #include <unistd.h>
 
 int go_to_end(char *s, int i)
