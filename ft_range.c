@@ -2,24 +2,24 @@
 
 int	*ft_range(int start, int end)
 {
-	int	i;
+	int	n;
 	int	*tab;
-	int	j;
+	int	i;
 
-	i = end - start;
-	if (i < 0)
-		i = -i;
-	if (i = 0)
+	n = end - start;
+	if (n < 0)
+		n = -n;
+	if (n = 0)
 		return (0);
-	tab = malloc(sizeof(*tab) * (i + 1));
+	tab = malloc(sizeof(*tab) * (n + 1));
 	if (tab == NULL)
 		return (NULL);
-	j = 0;
-	while (i >= 0)
+	i = 0;
+	while (n >= 0)
 	{
-		tab[j] = start;
-		j++;
-		i--;
+		tab[i] = start;
+		i++;
+		n--;
 		start++;
 	}
 	return (tab);
