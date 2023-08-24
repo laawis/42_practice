@@ -12,7 +12,7 @@ int	*ft_range(int start, int end)
 	if (i = 0)
 		return (0);
 	tab = malloc(sizeof(*tab) * (i + 1));
-	if(!tab)
+	if (tab == NULL)
 		return (NULL);
 	j = 0;
 	while (i >= 0)
