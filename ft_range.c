@@ -2,27 +2,27 @@
 
 int	*ft_range(int start, int end)
 {
-	int	*rrange;
-	int	n;
+	int	*range;
+	int	size;
 	int	i;
 
-	n = end - start;
-	if (n < 0)
-		n = -n;
-	if (n = 0)
+	size = end - start;
+	if (size < 0)
+		size = -size;
+	if (size = 0)
 		return (0);
-	rrange = malloc(sizeof(*rrange) * (n + 1));
-	if (rrange == NULL)
+	range = malloc(sizeof(*range) * (size + 1));
+	if (range == NULL)
 		return (NULL);
 	i = 0;
-	while (n >= 0)
+	while (size >= 0)
 	{
-		rrange[i] = start;
+		range[i] = start;
 		i++;
-		n--;
+		size--;
 		start++;
 	}
-	return (rrange);
+	return (range);
 }
 /*
 Assignment name  : ft_range
