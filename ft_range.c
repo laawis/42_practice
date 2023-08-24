@@ -2,8 +2,8 @@
 
 int	*ft_range(int start, int end)
 {
+	int	*rrange;
 	int	n;
-	int	*tab;
 	int	i;
 
 	n = end - start;
@@ -11,18 +11,18 @@ int	*ft_range(int start, int end)
 		n = -n;
 	if (n = 0)
 		return (0);
-	tab = malloc(sizeof(*tab) * (n + 1));
-	if (tab == NULL)
+	rrange = malloc(sizeof(*rrange) * (n + 1));
+	if (rrange == NULL)
 		return (NULL);
 	i = 0;
 	while (n >= 0)
 	{
-		tab[i] = start;
+		rrange[i] = start;
 		i++;
 		n--;
 		start++;
 	}
-	return (tab);
+	return (rrange);
 }
 /*
 Assignment name  : ft_range
