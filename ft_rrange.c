@@ -4,24 +4,24 @@ int *ft_rrange(int start, int end)
 {
     int *range;
     int i;
-    int n;
+    int size;
 
     i = 0;
-    n = end - start;
+    size = end - start;
 
     if (start > end)
         return (ft_rrange(end, start));
-    range = malloc(sizeof(int) * (n + 1));
-    if (range)
+    rrange = malloc(sizeof(i) * (size + 1));
+    if (rrange)
     {
-        while (i <= n)
+        while (i <= size)
         {
-            range[i] = end;
+            rrange[i] = end;
             end--;
             i++;
         }
     }
-    return (range);
+    return (rrange);
 }
 /*       
 Assignment name  : ft_rrange
