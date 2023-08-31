@@ -10,7 +10,7 @@ void fprime(unsigned int nb)
         printf("1");
     else
     {
-        prime = 2;;
+        prime = 2;
         while (nb > 1)
         {
             if (nb % prime == 0)
