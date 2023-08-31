@@ -33,12 +33,8 @@ int main(int argc, char **argv)
     if (argc == 2) 
     {
         number = atoi(argv[1]);
-        if (number < 0)
-        {
-            printf("\n");
-            return (0);
-        }
-        fprime(number);
+        if (number > 0)
+        	fprime(number);
     }
     printf("\n");
     return (0);
